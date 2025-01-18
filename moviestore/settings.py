@@ -54,7 +54,7 @@ MIDDLEWARE = [
 if ("REPLIT_DEPLOYMENT" in os.environ):
     MIDDLEWARE.append('django.middleware.clickjacking.XFrameOptionsMiddleware')
 
-ROOT_URLCONF = 'django_project.urls'
+ROOT_URLCONF = 'moviestore.urls'
 
 TEMPLATES = [
     {
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'django_project.wsgi.application'
+WSGI_APPLICATION = 'moviestore.wsgi.application'
 
 
 # Database
